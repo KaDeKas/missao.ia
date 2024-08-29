@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Social</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz sobre Questões Sociais</h1>
+        <p>Participe do nosso quiz para testar seus conhecimentos sobre questões sociais importantes. Responda as perguntas abaixo e veja como você se sai!</p>
+
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Qual é a principal causa da desigualdade social?</p>
+                <label><input type="radio" name="q1" value="a"> A falta de educação</label><br>
+                <label><input type="radio" name="q1" value="b"> Diferenças econômicas</label><br>
+                <label><input type="radio" name="q1" value="c"> Diferenças culturais</label><br>
+            </div>
+
+            <div class="question">
+                <p>2. Qual é uma medida eficaz para combater a pobreza?</p>
+                <label><input type="radio" name="q2" value="a"> Redução de impostos</label><br>
+                <label><input type="radio" name="q2" value="b"> Aumento de salários mínimos</label><br>
+                <label><input type="radio" name="q2" value="c"> Melhoria na educação e acesso a serviços sociais</label><br>
+            </div>
+
+            <div class="question">
+                <p>3. O que é inclusão social?</p>
+                <label><input type="radio" name="q3" value="a"> Exclusão de grupos minoritários</label><br>
+                <label><input type="radio" name="q3" value="b"> Igualdade de oportunidades para todos</label><br>
+                <label><input type="radio" name="q3" value="c"> Incentivo ao individualismo</label><br>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Enviar Respostas</button>
+        </form>
+
+        <div id="result" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
